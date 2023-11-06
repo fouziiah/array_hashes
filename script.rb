@@ -9,7 +9,7 @@
     puts fruits[5]
 
 # #4. Add "kiwi" to the end of the array.
-    fruits.push('kiwi')
+    fruits << 'kiwi'
     
 
 #5. Remove "cherry" from the array.
@@ -40,7 +40,7 @@
     puts student
 
 #2. Print only the value associated with the "name" key.
-    puts student["name"]
+    puts "Student Name: #{student["name"]}"
 
 #3. Add a new key-value pair to the hash: "gpa" => 3.7.
     student["gpa"] = 3.7
@@ -52,11 +52,6 @@
    puts student
 
 #6. Check if the hash contains a key "gender" and print the result.
-    if student.has_key?('gender')
-        puts student['gender']
-    else
-        puts "gender key doesn't exist"
-    end
-
+puts "Does the student hash contain 'gender'? #{student.key?("gender")}"
 
 
